@@ -51,21 +51,21 @@ namespace LoginUsuario
                 if (txt_Usuario.Text.Equals(""))//si esta vacío el txt usuario 
                 {
 
-                    MessageBox.Show("Los campos son obligatorios", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Debe completar el campo usuario", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     txt_Usuario.SelectAll();
                     txt_Usuario.Focus();
 
                 }
                  if (txt_contrasena.Text.Equals(""))//si el txtcontrasena esta vacío
                 {
-                    MessageBox.Show("Los campos son obligatorios", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Debe completar el campo contraseña", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     txt_contrasena.SelectAll();
                     txt_contrasena.Focus();
                 }
 
                    if (txt_contrasena.Text.Equals("") && txt_Usuario.Text.Equals(""))//si ambos estan vacíos
                 {
-                    MessageBox.Show("Los campos son obligatorios","Validación",MessageBoxButtons.OK,MessageBoxIcon.Exclamation );
+                    MessageBox.Show(" Debes completar todos los campos","Validación",MessageBoxButtons.OK,MessageBoxIcon.Exclamation );
                 }
                 else {
                     ora.Open();
@@ -88,18 +88,14 @@ namespace LoginUsuario
                         this.Hide();//ocultara el panel de Login
                         MessageBox.Show("Bienvenido al Sistema AURA ","Bienvenido",MessageBoxButtons.OK,MessageBoxIcon.Information);//Mostrara un mensaje de Bienvenida
                         ora.Close();//cerrara la conexion con la BD
-
-
-
-
+                 
                     }
                     else
                     {
                         //modificar mensaje de error
-                        MessageBox.Show("Problemas de conexión", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                        MessageBox.Show("Contraseña invalida", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Question);
 
-                        ora.Close();//cerrara la conexion con la BD
-                       
+                        ora.Close();//cerrara la conexion con la BD 
                         //borrara los campos
                         txt_Usuario.Clear();
                         txt_contrasena.Clear();
@@ -111,7 +107,7 @@ namespace LoginUsuario
             catch (Exception)
             {
                 //si existe otro error no contemplado mostrara el mensaje de error y no se caera 
-                MessageBox.Show("Inserte Mensaje", "Conexión Down", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("El sistema no puede conectarse con el servidor", "Conexión Down", MessageBoxButtons.OK, MessageBoxIcon.Question);
                 txt_Usuario.Clear();
                 txt_contrasena.Clear();
             }
@@ -128,7 +124,7 @@ namespace LoginUsuario
             }
             else
             {
-                MessageBox.Show("Dirección de correo electrónico no válida","el correo debe tener el formato ejemplo@gmail.cl, por favor, seleccione un correo válido",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
+                MessageBox.Show("el correo debe tener el formato ejemplo@gmail.cl, por favor, seleccione un correo válido", "Dirección de correo electrónico no válida",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
                 txt_Usuario.SelectAll();
                 txt_Usuario.Focus();
             }

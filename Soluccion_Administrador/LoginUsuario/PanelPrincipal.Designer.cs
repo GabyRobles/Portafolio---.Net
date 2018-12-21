@@ -33,6 +33,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.btn_limpiarProducto = new System.Windows.Forms.Button();
             this.label23 = new System.Windows.Forms.Label();
             this.cbocategoria = new System.Windows.Forms.ComboBox();
             this.dtpvecipro = new System.Windows.Forms.DateTimePicker();
@@ -53,6 +54,7 @@
             this.txtbuscarPro = new System.Windows.Forms.TextBox();
             this.dgvProducto = new System.Windows.Forms.DataGridView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.btn_limpiar_gerenteAsoc = new System.Windows.Forms.Button();
             this.label24 = new System.Windows.Forms.Label();
             this.cbopuestoGA = new System.Windows.Forms.ComboBox();
             this.cboEmADM = new System.Windows.Forms.ComboBox();
@@ -73,6 +75,7 @@
             this.dgvAsociacion = new System.Windows.Forms.DataGridView();
             this.btnBuscaGerente = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.btn_limpiarSuc = new System.Windows.Forms.Button();
             this.label25 = new System.Windows.Forms.Label();
             this.cboEmpresaSuc = new System.Windows.Forms.ComboBox();
             this.lblid = new System.Windows.Forms.Label();
@@ -89,6 +92,7 @@
             this.btnBuscarSucursal = new System.Windows.Forms.Button();
             this.btnSucursal = new System.Windows.Forms.Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.btn_limpiarEncargado = new System.Windows.Forms.Button();
             this.label26 = new System.Windows.Forms.Label();
             this.cboPuestoEN = new System.Windows.Forms.ComboBox();
             this.cboEmpresaEN = new System.Windows.Forms.ComboBox();
@@ -109,6 +113,7 @@
             this.btnBuscarEncargado = new System.Windows.Forms.Button();
             this.dgvEncargado = new System.Windows.Forms.DataGridView();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.btn_limpiarConsumidor = new System.Windows.Forms.Button();
             this.label27 = new System.Windows.Forms.Label();
             this.cboEnvioOfertaCliente = new System.Windows.Forms.ComboBox();
             this.label20 = new System.Windows.Forms.Label();
@@ -137,6 +142,7 @@
             this.btnBuscarCliente = new System.Windows.Forms.Button();
             this.dtvCliente = new System.Windows.Forms.DataGridView();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.btn_limpiarPuesto = new System.Windows.Forms.Button();
             this.label28 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
@@ -155,6 +161,7 @@
             this.dtpDesde = new System.Windows.Forms.DateTimePicker();
             this.btnGenerarBI = new System.Windows.Forms.Button();
             this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.button6 = new System.Windows.Forms.Button();
             this.cbotrabajadorOferta = new System.Windows.Forms.ComboBox();
             this.cboSucOfert = new System.Windows.Forms.ComboBox();
             this.cboprodOfert = new System.Windows.Forms.ComboBox();
@@ -234,6 +241,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.btn_limpiarProducto);
             this.tabPage1.Controls.Add(this.label23);
             this.tabPage1.Controls.Add(this.cbocategoria);
             this.tabPage1.Controls.Add(this.dtpvecipro);
@@ -260,6 +268,19 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Productos";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // btn_limpiarProducto
+            // 
+            this.btn_limpiarProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_limpiarProducto.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_limpiarProducto.Image = ((System.Drawing.Image)(resources.GetObject("btn_limpiarProducto.Image")));
+            this.btn_limpiarProducto.Location = new System.Drawing.Point(943, 316);
+            this.btn_limpiarProducto.Name = "btn_limpiarProducto";
+            this.btn_limpiarProducto.Size = new System.Drawing.Size(74, 33);
+            this.btn_limpiarProducto.TabIndex = 38;
+            this.btn_limpiarProducto.Text = "Limpiar";
+            this.btn_limpiarProducto.UseVisualStyleBackColor = true;
+            this.btn_limpiarProducto.Click += new System.EventHandler(this.btn_limpiarProducto_Click);
             // 
             // label23
             // 
@@ -379,7 +400,7 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(838, 354);
+            this.button1.Location = new System.Drawing.Point(771, 317);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(86, 33);
             this.button1.TabIndex = 21;
@@ -392,7 +413,7 @@
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(939, 354);
+            this.button2.Location = new System.Drawing.Point(863, 316);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(74, 33);
             this.button2.TabIndex = 20;
@@ -405,7 +426,7 @@
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(734, 354);
+            this.button3.Location = new System.Drawing.Point(688, 316);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(77, 33);
             this.button3.TabIndex = 19;
@@ -447,6 +468,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.btn_limpiar_gerenteAsoc);
             this.tabPage2.Controls.Add(this.label24);
             this.tabPage2.Controls.Add(this.cbopuestoGA);
             this.tabPage2.Controls.Add(this.cboEmADM);
@@ -473,6 +495,19 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Gerente Asociación";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // btn_limpiar_gerenteAsoc
+            // 
+            this.btn_limpiar_gerenteAsoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_limpiar_gerenteAsoc.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_limpiar_gerenteAsoc.Image = ((System.Drawing.Image)(resources.GetObject("btn_limpiar_gerenteAsoc.Image")));
+            this.btn_limpiar_gerenteAsoc.Location = new System.Drawing.Point(953, 337);
+            this.btn_limpiar_gerenteAsoc.Name = "btn_limpiar_gerenteAsoc";
+            this.btn_limpiar_gerenteAsoc.Size = new System.Drawing.Size(74, 33);
+            this.btn_limpiar_gerenteAsoc.TabIndex = 39;
+            this.btn_limpiar_gerenteAsoc.Text = "Limpiar";
+            this.btn_limpiar_gerenteAsoc.UseVisualStyleBackColor = true;
+            this.btn_limpiar_gerenteAsoc.Click += new System.EventHandler(this.btn_limpiar_gerenteAsoc_Click);
             // 
             // label24
             // 
@@ -589,7 +624,7 @@
             this.btnmodiGA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnmodiGA.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnmodiGA.Image = ((System.Drawing.Image)(resources.GetObject("btnmodiGA.Image")));
-            this.btnmodiGA.Location = new System.Drawing.Point(825, 380);
+            this.btnmodiGA.Location = new System.Drawing.Point(769, 336);
             this.btnmodiGA.Name = "btnmodiGA";
             this.btnmodiGA.Size = new System.Drawing.Size(88, 34);
             this.btnmodiGA.TabIndex = 5;
@@ -602,7 +637,7 @@
             this.btnelimGA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnelimGA.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnelimGA.Image = ((System.Drawing.Image)(resources.GetObject("btnelimGA.Image")));
-            this.btnelimGA.Location = new System.Drawing.Point(919, 380);
+            this.btnelimGA.Location = new System.Drawing.Point(869, 337);
             this.btnelimGA.Name = "btnelimGA";
             this.btnelimGA.Size = new System.Drawing.Size(78, 34);
             this.btnelimGA.TabIndex = 4;
@@ -615,7 +650,7 @@
             this.btnGerente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGerente.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnGerente.Image = ((System.Drawing.Image)(resources.GetObject("btnGerente.Image")));
-            this.btnGerente.Location = new System.Drawing.Point(737, 379);
+            this.btnGerente.Location = new System.Drawing.Point(683, 336);
             this.btnGerente.Name = "btnGerente";
             this.btnGerente.Size = new System.Drawing.Size(80, 34);
             this.btnGerente.TabIndex = 3;
@@ -657,6 +692,7 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.btn_limpiarSuc);
             this.tabPage3.Controls.Add(this.label25);
             this.tabPage3.Controls.Add(this.cboEmpresaSuc);
             this.tabPage3.Controls.Add(this.lblid);
@@ -680,11 +716,24 @@
             this.tabPage3.Text = "Sucursal";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // btn_limpiarSuc
+            // 
+            this.btn_limpiarSuc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_limpiarSuc.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_limpiarSuc.Image = ((System.Drawing.Image)(resources.GetObject("btn_limpiarSuc.Image")));
+            this.btn_limpiarSuc.Location = new System.Drawing.Point(822, 279);
+            this.btn_limpiarSuc.Name = "btn_limpiarSuc";
+            this.btn_limpiarSuc.Size = new System.Drawing.Size(75, 36);
+            this.btn_limpiarSuc.TabIndex = 39;
+            this.btn_limpiarSuc.Text = "Limpiar";
+            this.btn_limpiarSuc.UseVisualStyleBackColor = true;
+            this.btn_limpiarSuc.Click += new System.EventHandler(this.btn_limpiarSuc_Click);
+            // 
             // label25
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(750, 48);
+            this.label25.Location = new System.Drawing.Point(626, 48);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(213, 25);
             this.label25.TabIndex = 38;
@@ -693,7 +742,7 @@
             // cboEmpresaSuc
             // 
             this.cboEmpresaSuc.FormattingEnabled = true;
-            this.cboEmpresaSuc.Location = new System.Drawing.Point(815, 250);
+            this.cboEmpresaSuc.Location = new System.Drawing.Point(660, 208);
             this.cboEmpresaSuc.Name = "cboEmpresaSuc";
             this.cboEmpresaSuc.Size = new System.Drawing.Size(153, 21);
             this.cboEmpresaSuc.TabIndex = 14;
@@ -701,7 +750,7 @@
             // lblid
             // 
             this.lblid.AutoSize = true;
-            this.lblid.Location = new System.Drawing.Point(782, 174);
+            this.lblid.Location = new System.Drawing.Point(627, 132);
             this.lblid.Name = "lblid";
             this.lblid.Size = new System.Drawing.Size(18, 13);
             this.lblid.TabIndex = 13;
@@ -709,7 +758,7 @@
             // 
             // txtDiresucu
             // 
-            this.txtDiresucu.Location = new System.Drawing.Point(815, 223);
+            this.txtDiresucu.Location = new System.Drawing.Point(660, 181);
             this.txtDiresucu.Name = "txtDiresucu";
             this.txtDiresucu.Size = new System.Drawing.Size(153, 20);
             this.txtDiresucu.TabIndex = 11;
@@ -717,7 +766,7 @@
             // 
             // txtIdsucu
             // 
-            this.txtIdsucu.Location = new System.Drawing.Point(815, 171);
+            this.txtIdsucu.Location = new System.Drawing.Point(660, 129);
             this.txtIdsucu.Name = "txtIdsucu";
             this.txtIdsucu.Size = new System.Drawing.Size(153, 20);
             this.txtIdsucu.TabIndex = 10;
@@ -725,7 +774,7 @@
             // 
             // txtNomsucu
             // 
-            this.txtNomsucu.Location = new System.Drawing.Point(815, 197);
+            this.txtNomsucu.Location = new System.Drawing.Point(660, 155);
             this.txtNomsucu.Name = "txtNomsucu";
             this.txtNomsucu.Size = new System.Drawing.Size(153, 20);
             this.txtNomsucu.TabIndex = 9;
@@ -734,7 +783,7 @@
             // lblEmpresa
             // 
             this.lblEmpresa.AutoSize = true;
-            this.lblEmpresa.Location = new System.Drawing.Point(752, 253);
+            this.lblEmpresa.Location = new System.Drawing.Point(597, 211);
             this.lblEmpresa.Name = "lblEmpresa";
             this.lblEmpresa.Size = new System.Drawing.Size(48, 13);
             this.lblEmpresa.TabIndex = 8;
@@ -743,7 +792,7 @@
             // lblDireccion
             // 
             this.lblDireccion.AutoSize = true;
-            this.lblDireccion.Location = new System.Drawing.Point(748, 226);
+            this.lblDireccion.Location = new System.Drawing.Point(593, 184);
             this.lblDireccion.Name = "lblDireccion";
             this.lblDireccion.Size = new System.Drawing.Size(52, 13);
             this.lblDireccion.TabIndex = 7;
@@ -752,7 +801,7 @@
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(760, 200);
+            this.lblNombre.Location = new System.Drawing.Point(605, 158);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(44, 13);
             this.lblNombre.TabIndex = 6;
@@ -763,9 +812,9 @@
             this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminar.Image")));
-            this.btnEliminar.Location = new System.Drawing.Point(927, 369);
+            this.btnEliminar.Location = new System.Drawing.Point(714, 279);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(75, 30);
+            this.btnEliminar.Size = new System.Drawing.Size(85, 36);
             this.btnEliminar.TabIndex = 5;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
@@ -776,9 +825,9 @@
             this.btnActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnActualizar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnActualizar.Image = ((System.Drawing.Image)(resources.GetObject("btnActualizar.Image")));
-            this.btnActualizar.Location = new System.Drawing.Point(819, 369);
+            this.btnActualizar.Location = new System.Drawing.Point(596, 279);
             this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(90, 30);
+            this.btnActualizar.Size = new System.Drawing.Size(102, 36);
             this.btnActualizar.TabIndex = 4;
             this.btnActualizar.Text = "Modificar";
             this.btnActualizar.UseVisualStyleBackColor = true;
@@ -821,9 +870,9 @@
             this.btnSucursal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSucursal.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnSucursal.Image = ((System.Drawing.Image)(resources.GetObject("btnSucursal.Image")));
-            this.btnSucursal.Location = new System.Drawing.Point(727, 370);
+            this.btnSucursal.Location = new System.Drawing.Point(487, 279);
             this.btnSucursal.Name = "btnSucursal";
-            this.btnSucursal.Size = new System.Drawing.Size(77, 30);
+            this.btnSucursal.Size = new System.Drawing.Size(94, 36);
             this.btnSucursal.TabIndex = 0;
             this.btnSucursal.Text = "Nuevo";
             this.btnSucursal.UseVisualStyleBackColor = true;
@@ -831,6 +880,7 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.btn_limpiarEncargado);
             this.tabPage4.Controls.Add(this.label26);
             this.tabPage4.Controls.Add(this.cboPuestoEN);
             this.tabPage4.Controls.Add(this.cboEmpresaEN);
@@ -857,6 +907,19 @@
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Encargado de Sucursal";
             this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // btn_limpiarEncargado
+            // 
+            this.btn_limpiarEncargado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_limpiarEncargado.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_limpiarEncargado.Image = ((System.Drawing.Image)(resources.GetObject("btn_limpiarEncargado.Image")));
+            this.btn_limpiarEncargado.Location = new System.Drawing.Point(949, 346);
+            this.btn_limpiarEncargado.Name = "btn_limpiarEncargado";
+            this.btn_limpiarEncargado.Size = new System.Drawing.Size(78, 33);
+            this.btn_limpiarEncargado.TabIndex = 39;
+            this.btn_limpiarEncargado.Text = "Limpiar";
+            this.btn_limpiarEncargado.UseVisualStyleBackColor = true;
+            this.btn_limpiarEncargado.Click += new System.EventHandler(this.btn_limpiarEncargado_Click);
             // 
             // label26
             // 
@@ -974,7 +1037,7 @@
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.Location = new System.Drawing.Point(805, 361);
+            this.button4.Location = new System.Drawing.Point(770, 346);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(87, 33);
             this.button4.TabIndex = 21;
@@ -987,7 +1050,7 @@
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(907, 361);
+            this.button5.Location = new System.Drawing.Point(863, 346);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(80, 33);
             this.button5.TabIndex = 20;
@@ -1000,7 +1063,7 @@
             this.btnNuevoEncargado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevoEncargado.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnNuevoEncargado.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevoEncargado.Image")));
-            this.btnNuevoEncargado.Location = new System.Drawing.Point(706, 361);
+            this.btnNuevoEncargado.Location = new System.Drawing.Point(671, 346);
             this.btnNuevoEncargado.Name = "btnNuevoEncargado";
             this.btnNuevoEncargado.Size = new System.Drawing.Size(93, 33);
             this.btnNuevoEncargado.TabIndex = 19;
@@ -1042,6 +1105,7 @@
             // 
             // tabPage5
             // 
+            this.tabPage5.Controls.Add(this.btn_limpiarConsumidor);
             this.tabPage5.Controls.Add(this.label27);
             this.tabPage5.Controls.Add(this.cboEnvioOfertaCliente);
             this.tabPage5.Controls.Add(this.label20);
@@ -1076,6 +1140,19 @@
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Consumidor";
             this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // btn_limpiarConsumidor
+            // 
+            this.btn_limpiarConsumidor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_limpiarConsumidor.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_limpiarConsumidor.Image = ((System.Drawing.Image)(resources.GetObject("btn_limpiarConsumidor.Image")));
+            this.btn_limpiarConsumidor.Location = new System.Drawing.Point(945, 394);
+            this.btn_limpiarConsumidor.Name = "btn_limpiarConsumidor";
+            this.btn_limpiarConsumidor.Size = new System.Drawing.Size(76, 30);
+            this.btn_limpiarConsumidor.TabIndex = 65;
+            this.btn_limpiarConsumidor.Text = "Limpiar";
+            this.btn_limpiarConsumidor.UseVisualStyleBackColor = true;
+            this.btn_limpiarConsumidor.Click += new System.EventHandler(this.btn_limpiarConsumidor_Click);
             // 
             // label27
             // 
@@ -1268,7 +1345,7 @@
             this.btnModificarCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificarCliente.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnModificarCliente.Image = ((System.Drawing.Image)(resources.GetObject("btnModificarCliente.Image")));
-            this.btnModificarCliente.Location = new System.Drawing.Point(821, 393);
+            this.btnModificarCliente.Location = new System.Drawing.Point(772, 393);
             this.btnModificarCliente.Name = "btnModificarCliente";
             this.btnModificarCliente.Size = new System.Drawing.Size(84, 32);
             this.btnModificarCliente.TabIndex = 41;
@@ -1281,7 +1358,7 @@
             this.btnEliminarCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminarCliente.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnEliminarCliente.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminarCliente.Image")));
-            this.btnEliminarCliente.Location = new System.Drawing.Point(925, 393);
+            this.btnEliminarCliente.Location = new System.Drawing.Point(862, 393);
             this.btnEliminarCliente.Name = "btnEliminarCliente";
             this.btnEliminarCliente.Size = new System.Drawing.Size(77, 32);
             this.btnEliminarCliente.TabIndex = 40;
@@ -1294,7 +1371,7 @@
             this.btnNuevoCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevoCliente.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnNuevoCliente.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevoCliente.Image")));
-            this.btnNuevoCliente.Location = new System.Drawing.Point(721, 393);
+            this.btnNuevoCliente.Location = new System.Drawing.Point(687, 392);
             this.btnNuevoCliente.Name = "btnNuevoCliente";
             this.btnNuevoCliente.Size = new System.Drawing.Size(79, 32);
             this.btnNuevoCliente.TabIndex = 39;
@@ -1336,6 +1413,7 @@
             // 
             // tabPage6
             // 
+            this.tabPage6.Controls.Add(this.btn_limpiarPuesto);
             this.tabPage6.Controls.Add(this.label28);
             this.tabPage6.Controls.Add(this.label21);
             this.tabPage6.Controls.Add(this.label22);
@@ -1354,6 +1432,19 @@
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Puesto";
             this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // btn_limpiarPuesto
+            // 
+            this.btn_limpiarPuesto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_limpiarPuesto.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_limpiarPuesto.Image = ((System.Drawing.Image)(resources.GetObject("btn_limpiarPuesto.Image")));
+            this.btn_limpiarPuesto.Location = new System.Drawing.Point(881, 341);
+            this.btn_limpiarPuesto.Name = "btn_limpiarPuesto";
+            this.btn_limpiarPuesto.Size = new System.Drawing.Size(91, 30);
+            this.btn_limpiarPuesto.TabIndex = 51;
+            this.btn_limpiarPuesto.Text = "Limpiar";
+            this.btn_limpiarPuesto.UseVisualStyleBackColor = true;
+            this.btn_limpiarPuesto.Click += new System.EventHandler(this.btn_limpiarPuesto_Click);
             // 
             // label28
             // 
@@ -1403,7 +1494,7 @@
             this.btnModificarPuesto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificarPuesto.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnModificarPuesto.Image = ((System.Drawing.Image)(resources.GetObject("btnModificarPuesto.Image")));
-            this.btnModificarPuesto.Location = new System.Drawing.Point(720, 337);
+            this.btnModificarPuesto.Location = new System.Drawing.Point(684, 337);
             this.btnModificarPuesto.Name = "btnModificarPuesto";
             this.btnModificarPuesto.Size = new System.Drawing.Size(81, 34);
             this.btnModificarPuesto.TabIndex = 45;
@@ -1416,7 +1507,7 @@
             this.btnEliminarPuesto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminarPuesto.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnEliminarPuesto.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminarPuesto.Image")));
-            this.btnEliminarPuesto.Location = new System.Drawing.Point(817, 337);
+            this.btnEliminarPuesto.Location = new System.Drawing.Point(783, 337);
             this.btnEliminarPuesto.Name = "btnEliminarPuesto";
             this.btnEliminarPuesto.Size = new System.Drawing.Size(82, 34);
             this.btnEliminarPuesto.TabIndex = 44;
@@ -1429,7 +1520,7 @@
             this.btnNuevoPuesto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevoPuesto.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnNuevoPuesto.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevoPuesto.Image")));
-            this.btnNuevoPuesto.Location = new System.Drawing.Point(619, 337);
+            this.btnNuevoPuesto.Location = new System.Drawing.Point(588, 337);
             this.btnNuevoPuesto.Name = "btnNuevoPuesto";
             this.btnNuevoPuesto.Size = new System.Drawing.Size(77, 34);
             this.btnNuevoPuesto.TabIndex = 43;
@@ -1465,7 +1556,7 @@
             this.dgvPuesto.Location = new System.Drawing.Point(128, 73);
             this.dgvPuesto.Name = "dgvPuesto";
             this.dgvPuesto.ReadOnly = true;
-            this.dgvPuesto.Size = new System.Drawing.Size(262, 346);
+            this.dgvPuesto.Size = new System.Drawing.Size(245, 346);
             this.dgvPuesto.TabIndex = 40;
             this.dgvPuesto.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPuesto_CellContentClick);
             // 
@@ -1532,6 +1623,7 @@
             // 
             // tabPage8
             // 
+            this.tabPage8.Controls.Add(this.button6);
             this.tabPage8.Controls.Add(this.cbotrabajadorOferta);
             this.tabPage8.Controls.Add(this.cboSucOfert);
             this.tabPage8.Controls.Add(this.cboprodOfert);
@@ -1568,6 +1660,20 @@
             this.tabPage8.TabIndex = 7;
             this.tabPage8.Text = "Oferta";
             this.tabPage8.UseVisualStyleBackColor = true;
+           
+            // 
+            // button6
+            // 
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
+            this.button6.Location = new System.Drawing.Point(914, 380);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(80, 34);
+            this.button6.TabIndex = 137;
+            this.button6.Text = "Limpiar";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // cbotrabajadorOferta
             // 
@@ -1640,7 +1746,7 @@
             this.btnEliminarOferta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminarOferta.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnEliminarOferta.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminarOferta.Image")));
-            this.btnEliminarOferta.Location = new System.Drawing.Point(858, 380);
+            this.btnEliminarOferta.Location = new System.Drawing.Point(823, 380);
             this.btnEliminarOferta.Name = "btnEliminarOferta";
             this.btnEliminarOferta.Size = new System.Drawing.Size(85, 33);
             this.btnEliminarOferta.TabIndex = 127;
@@ -1653,7 +1759,7 @@
             this.btnModificarOferta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificarOferta.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnModificarOferta.Image = ((System.Drawing.Image)(resources.GetObject("btnModificarOferta.Image")));
-            this.btnModificarOferta.Location = new System.Drawing.Point(749, 380);
+            this.btnModificarOferta.Location = new System.Drawing.Point(727, 380);
             this.btnModificarOferta.Name = "btnModificarOferta";
             this.btnModificarOferta.Size = new System.Drawing.Size(90, 33);
             this.btnModificarOferta.TabIndex = 126;
@@ -1666,7 +1772,7 @@
             this.btnNuevaOferta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevaOferta.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnNuevaOferta.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevaOferta.Image")));
-            this.btnNuevaOferta.Location = new System.Drawing.Point(636, 380);
+            this.btnNuevaOferta.Location = new System.Drawing.Point(618, 380);
             this.btnNuevaOferta.Name = "btnNuevaOferta";
             this.btnNuevaOferta.Size = new System.Drawing.Size(93, 33);
             this.btnNuevaOferta.TabIndex = 125;
@@ -1740,6 +1846,7 @@
             this.txtUrlOferta.Name = "txtUrlOferta";
             this.txtUrlOferta.Size = new System.Drawing.Size(125, 20);
             this.txtUrlOferta.TabIndex = 114;
+            this.txtUrlOferta.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUrlOferta_KeyPress);
             // 
             // txtPrecioOferta
             // 
@@ -1770,7 +1877,7 @@
             // lblUrl
             // 
             this.lblUrl.AutoSize = true;
-            this.lblUrl.Location = new System.Drawing.Point(591, 186);
+            this.lblUrl.Location = new System.Drawing.Point(584, 186);
             this.lblUrl.Name = "lblUrl";
             this.lblUrl.Size = new System.Drawing.Size(82, 13);
             this.lblUrl.TabIndex = 110;
@@ -2076,5 +2183,12 @@
         private System.Windows.Forms.ComboBox cbocateOfert;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label lblHora;
+        private System.Windows.Forms.Button btn_limpiarProducto;
+        private System.Windows.Forms.Button btn_limpiar_gerenteAsoc;
+        private System.Windows.Forms.Button btn_limpiarSuc;
+        private System.Windows.Forms.Button btn_limpiarEncargado;
+        private System.Windows.Forms.Button btn_limpiarConsumidor;
+        private System.Windows.Forms.Button btn_limpiarPuesto;
+        private System.Windows.Forms.Button button6;
     }
 }
